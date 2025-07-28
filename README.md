@@ -1,3 +1,12 @@
+---
+license: apache-2.0
+title: YT_Blog_MultiAgent
+sdk: streamlit
+emoji: 📚
+colorFrom: green
+colorTo: yellow
+short_description: App using crewai multiagents to create blog of YT vid
+---
 # YT-Blog-Creator-using-Multi-Agents-CrewAI
 **Overview**
 The YT Blog Generator is a Streamlit-based application that uses CrewAI multi-agent architecture to research content from a specified YouTube channel and generate well-structured blog posts.
