@@ -1,0 +1,30 @@
+name: Deploy to Hugging Face
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Git
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+
+      - name: Push to Hugging Face Spaces
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git clone https://RohanBhardwaj10:$HF_TOKEN@huggingface.co/spaces/RohanBhardwaj10/MultiAgent_YT_Blog 
+          cd MultiAgent_YT_Blog
+          rsync -av --exclude='.git' ../ .
+          git add .
+          git commit -m "Update via GitHub Actions"
+          git push
