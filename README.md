@@ -10,7 +10,8 @@ short_description: App using crewai multiagents to create blog of YT vid
 # YT-Blog-Creator-using-Multi-Agents-CrewAI
 **Overview**
 The YT Blog Generator is a Streamlit-based application that uses CrewAI multi-agent architecture to research content from a specified YouTube channel and generate well-structured blog posts.
-It employs multiple AI agents, each with a defined role (researcher and writer), to collaboratively gather information and produce high-quality blog content.
+It employs multiple AI agents, each with a defined role (researcher and writer), to collaboratively gather information and produce high-quality blog content. 
+# link : https://huggingface.co/spaces/RohanBhardwaj10/MultiAgent_YT_Blog
 
 ## Features
 Multi-Agent System: Separate agents for researching video content and writing blog posts.
